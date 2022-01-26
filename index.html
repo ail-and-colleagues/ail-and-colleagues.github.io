@@ -10,8 +10,8 @@ layout: default
 	  	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
 		<div class="flex">
-		<p><img src="{{ post.headimg }}"></p>
-	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
+		<p class="lead_flex"><img src="{{ post.headimg }}"></p>
+	  	<p class="cont_flex">{{ post.content | strip_html | truncatewords:50 }}</p>
 		</div>
 	  </li>
 
