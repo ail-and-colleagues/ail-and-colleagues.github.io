@@ -9,9 +9,10 @@ layout: default
 	  <li class="post">
 	  	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
+		<div class="flex">
+		<p><img="{{ post.headimg }}"></p>
 	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  	<p>{{ post.headimg }}</p>
-
+		</div>
 	  </li>
 
     {% endfor %}
