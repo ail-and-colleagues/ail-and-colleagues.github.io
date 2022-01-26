@@ -1,11 +1,10 @@
 # Site settings
-title: ail | Architectual Information Laboratory
-description: "A minimal blog template, build with Jekyll."
+title: ail
+description: "ail: Architectual Information Laboratory, and colleagures, chiba university"
 url: "https://ail-and-colleagues.github.io"
 author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+  name: "keita KADO"
+  url: "https://ail-and-colleagues.github.io"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
