@@ -1,5 +1,5 @@
 ---
-title: post test（日本語）
+title: post test（日本語!）
 headimg: /img/img-test.png
 ---
 ![Test](/img/img-test.png "Test")
