@@ -1,14 +1,14 @@
 ---
-title: Grasshopperをgitしたい
+title: GrasshopperをGitする
 thumb: /img/2021/ghx-diff.png
-outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理を試みています。
+outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理ができないか試みています。
 ---
 
 
 
 Repository: [git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は
 研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
-grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにか管理することを試みています。
+grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理ができないか試みています。
 
 ざっくりと言えば、Grasshopperにて、外部のgrasshopper(.gh/ .ghx)を関数のように呼び出すことのできる[hops](https://developer.rhino3d.com/guides/compute/hops-component/)をgitで管理しつつ、そのサポートを[git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)に含まれるghx_diff.pyとghx_to_dot.pyで行うことを試行しています。hopsのみで良いのでは、と思うかもしれませんが：
 - .ghxではコンポーネント一つをざっくり50行くらい使って記述しているのでdiffがうまくとれない
@@ -19,17 +19,23 @@ grasshopperはsave asからxml形式の.ghxでも保存できるのですが、�
 なお、[hops](https://developer.rhino3d.com/guides/compute/hops-component/)を用いるとコンポーネントの集まり（モジュール）に対する入出力を整理するマインドが芽生えるように思います。スパゲッティに対してはそれだけで一定の効果がありそうです。
 
 ## ghx_diff.py
-ghx_diff.pyでは、.ghxのdiffをとる目的で作られています。ファイル名(.ghx)と前(left)・後(right)のブランチ名を指定すると次図のような差分:diffの表現された.ghxを
+ghx_diff.pyは、.ghxのdiffをとる目的で作られています。ファイル名(.ghx)と前(left)・後(right)のブランチ名を指定すると次図のような差分:diffの表現された.ghxを
 *{target\_file\_name}*(*{left\_branch\_name}*\_to\_*{right\_branch\_name}*)\_diff.ghx
 として出力します。例えば、conflictした際に、これを使って採用版を作ったのち、
 **git checkout --ours *target\_file.ghx***
 を発行すれば競合を解決できるかと思います。
 
+実装としては、各コンポーネントのguidと、その定義のうち：
+- コンポーネントの通し番号の含まれる要素
+- コンポーネントの位置の含まれる要素
+
+を除いた内容のhashのペアを作りそれを比較しています。左側にしかないguidはremoved、右側にしかなければadded、両方にあるがhashが違えばmodifiedとして、それぞれを色付きのグループでまとめ、最後に_diff.ghxとして書き出しています。grasshopperの場合、クラスターもバイナリ化されていますが文字列の状態でxmlの中に格納されていますし、GH_pythionの定義やinternalize、set valueした値もxmlの中に格納されています（当然といえば当然ですが…）のでhash化してしまうと扱いやすくて良いかと思います。このhashは下のghx_to_dot.pyでも使っています。
+
 ![Test](/img/2021/ghx-diff.png "Test")
 
 ## ghx_to_dot.py
 ghx_to_dot.pyはちょこっとした比較用に使うイメージで作られています。次図のようにコンポーネントの関係性をグラフとして表し、.pngで保存します。大凡どのような処理であったか、あるいは、add/stagingするべき変更なのか、など判断に使えると思っています。コンポーネントにはhashを付記できる（次図でいうpanelなどのコンポーネント名の左の「58b80...」など）ので、grasshopperでありがちな：
-- 同じ見た目のgh_pythonが複数存在してわからなくなる
+- 同じ見た目のGH_pythionが複数存在してわからなくなる
 - internalizeやset valueした値が気づかないうちに更新されていた
 
 などをチェックすることもできるかと思います。
