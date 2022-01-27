@@ -37,7 +37,7 @@ ghx_to_dot.pyはちょこっとした比較用に使うイメージで作られ�
 ![Test](/img/2021/ghx-dot.png "Test")
 
 
-グラフとして表す処理には、[pydot](https://github.com/pydot/pydot)を使っています。dot言語はデータをグラフとして表現するために用いられる言語の一種で、[Graphviz](https://graphviz.org/)などを使って可視化できます([pydot](https://github.com/pydot/pydot)は[Graphviz](https://graphviz.org/)を介さず直接可視化できます)。加戸は以前、[伝統木造構法で設計された四脚門の部材関係をグラフ化するという研究](http://papers.cumincad.org/cgi-bin/works/paper/caadria2019_273)でもdot言語/[Graphviz](https://graphviz.org/)を使ったのですが、ノードのレイアウトも自動的に行ってくれる点で、結構便利で楽しいツールだと思っています。
+グラフとして表す処理には、[pydot](https://github.com/pydot/pydot)を使っています。dot言語はデータをグラフとして表現するために用いられる言語の一種で、[Graphviz](https://graphviz.org/)などを使って可視化できます([pydot](https://github.com/pydot/pydot)は[Graphviz](https://graphviz.org/)を介さず直接可視化できます)。加戸は以前、[伝統木造構法で設計された四脚門の部材関係をグラフ化するという研究](http://papers.cumincad.org/cgi-bin/works/paper/caadria2019_273)でもdot言語/[Graphviz](https://graphviz.org/)を使ったのですが、ノードのレイアウトも自動的に行ってくれる点も楽しいです。便利で楽しいツールなので興味があればぜひ。
 
 ### ...
 加戸はgrasshopper、Git/Githubともにnewbieなのでもう少し使いながらバージョンアップをしていくことを予定しています。
