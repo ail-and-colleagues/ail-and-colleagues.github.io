@@ -5,13 +5,15 @@ outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量�
 ---
 
 
-[git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は
+
+Repository: [git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は
 研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
 grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにか管理することを試みています。
 
 ざっくりと言えば、Grasshopperにて、外部のgrasshopper(.gh/ .ghx)を関数のように呼び出すことのできる[hops](https://developer.rhino3d.com/guides/compute/hops-component/)をgitで管理しつつ、そのサポートを[git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)に含まれるghx_diff.pyとghx_to_dot.pyで行うことを試行しています。hopsのみで良いのでは、と思うかもしれませんが：
 - .ghxではコンポーネント一つをざっくり50行くらい使って記述しているのでdiffがうまくとれない
 - 保存時のビューを変更しただけ、コンポーネントを移動しただけ、でも更新されてしまうので意味のある履歴が埋もれる
+
 など、実は管理上の問題があります。[git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)の二つのプログラムはこのあたりをなんとかしようと試作したものです。
 
 なお、[hops](https://developer.rhino3d.com/guides/compute/hops-component/)を用いるとコンポーネントの集まり（モジュール）に対する入出力を整理するマインドが芽生えるように思います。スパゲッティに対してはそれだけで一定の効果がありそうです。
@@ -41,7 +43,9 @@ ghx_to_dot.pyはちょこっとした比較用に使うイメージで作られ�
 加戸はgrasshopper、Git/Githubともにnewbieなのでもう少し使いながらバージョンアップをしていくことを予定しています。
 
 ## 関連
-- Version control (grasshopper forum)[https://www.grasshopper3d.com/forum/topics/version-control](https://www.grasshopper3d.com/forum/topics/version-control)
-- Grasshopperの可読性を高めるには[https://blog.syntegrate.jp/2021/02/12/gh_readability/](https://blog.syntegrate.jp/2021/02/12/gh_readability/)
+- Version control (grasshopper forum)
+[https://www.grasshopper3d.com/forum/topics/version-control](https://www.grasshopper3d.com/forum/topics/version-control)
+- Grasshopperの可読性を高めるには
+[https://blog.syntegrate.jp/2021/02/12/gh_readability/](https://blog.syntegrate.jp/2021/02/12/gh_readability/)
 
 
