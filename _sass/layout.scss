@@ -255,9 +255,14 @@ code {
 
 footer {
   background-color: $main-color;
-  color: $background-color;
+  color: darken($background-color, 15%);
   text-align: center;
   padding: 0.6667em 0;
   background-color: $main-color;
   background-image: $background-grad;
+  a {
+  	text-decoration: none;
+  	color: $background-color;
+  	display: inline-block;
+  }
 }
