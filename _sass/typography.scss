@@ -34,6 +34,16 @@ h3, h4, h5, h6 {
 	padding: 0.66667em 0; /* 12px/18px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
 }
 
+hr {
+	content: "";
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 1.5em;
+    background-color: lighten($text-color, 35%);
+    transition: all 0.3s ease-in;
+}
+
 blockquote {
 	font-style: italic;
 	margin: 1.5em; /* 24px/18px */
