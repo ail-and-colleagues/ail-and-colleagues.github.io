@@ -76,6 +76,10 @@ h3, h4, h5, h6 {
 	padding: 0.5em 0; /* 12px/24px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
 }
 
+pre {
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+}
+
 blockquote {
 	font-style: italic;
 	margin: 1.3334em; /* 24px/18px */

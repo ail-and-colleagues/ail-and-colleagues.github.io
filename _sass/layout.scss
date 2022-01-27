@@ -77,9 +77,11 @@
   }
   &:before {
     top: -8px;
+    background-color: $background-color;
   }
   &:after {
     top: 4px;
+    background-color: $background-color;
   }
   &.btn-close {
     background: none;
