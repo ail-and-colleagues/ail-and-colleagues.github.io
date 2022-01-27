@@ -11,7 +11,7 @@ layout: default
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
 		<div class="flex">
 		<p class="thumb_flex"><img src="{{ post.thumb }}"></p>
-	  	<p class="outline_flex">{{ post.outline }}</p>
+	  	<p class="outline_flex">{{ post.outline  strip_html | truncatewords: 50}}</p>
 		</div>
 	  </li>
 
