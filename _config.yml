@@ -1,13 +1,13 @@
 # Site settings
 title: ail
-description: "ail: Architectual Information Laboratory, and colleagures, chiba university"
+description: "Architectual Information Laboratory and colleagures, chiba university"
 url: "https://ail-and-colleagues.github.io"
 author:
   name: "keita KADO"
   url: "https://ail-and-colleagues.github.io"
 
 # Build settings
-baseurl: https://ail-and-colleagues.github.io/ # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 homeurl: https://ail-and-colleagues.github.io/
 markdown: kramdown
 source: .
