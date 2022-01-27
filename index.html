@@ -13,8 +13,10 @@ layout: default
 			<p class="thumb_flex"><img src="{{ post.thumb }}"></p>
 			<p class="outline_flex">{{ post.outline | strip_html | truncatewords: 50 }}</p>
 		</div>
-		p class="outline_flex">{{ post.outline | strip_html | truncatewords: 50 }}</p>
-		p class="outline_flex">{{ post.outline2 | strip_html | truncatewords: 50 }}</p>
+		<p class="outline_flex">{{ post.outline | strip_html | truncatewords: 50 }}</p>
+		<p class="outline_flex">a {{ post.outline2 | truncatewords: 50 }}</p>
+		<p class="outline_flex">a {{ post.outline2 }}</p>
+
 	  </li>
 
     {% endfor %}
