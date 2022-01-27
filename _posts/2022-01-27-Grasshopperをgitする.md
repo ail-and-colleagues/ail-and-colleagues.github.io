@@ -1,7 +1,7 @@
 ---
-title: Grasshopperをgitする
+title: Grasshopperをgitしたい
 thumb: /img/2021/ghx-diff.png
-outline: [git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにか管理することを試みています。
+outline: [git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
 ---
 
 
