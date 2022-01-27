@@ -5,7 +5,8 @@
 #nav, #nav-left { 
   a {
     display: block;
-    color: $background-color;
+    // color: $background-color;
+    color: $text-color;
     padding: 0.33334em 0;
     font-size: 1.5em;
     font-weight: 400;
@@ -126,7 +127,7 @@
     background-image: linear-gradient(120deg, #155799, #159957);
   a {
   	text-decoration: none;
-  	//color: $text-color;
+  	color: $background-color;
   	display: inline-block;
   }
   img {
