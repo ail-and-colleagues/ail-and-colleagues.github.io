@@ -38,10 +38,16 @@ hr {
 	content: "";
     display: block;
     position: relative;
-    height: 4px;
-    width: 1.5em;
-    background-color: lighten($text-color, 35%);
+    height: 1px;
+    width: 5rem;
+    // background-color: lighten($text-color, 35%);
+	background-color: $background-color;
     transition: all 0.3s ease-in;
+	// display: block;
+	// content: '';
+	// width: 5rem;
+	// height: 1px;
+	// margin: 23px auto;
 }
 
 blockquote {
