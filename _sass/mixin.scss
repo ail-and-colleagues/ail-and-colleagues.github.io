@@ -25,11 +25,11 @@
 @mixin nav-position($position) {
 	width: 14rem;
   position: fixed;
-  background-color: $main-color;
+  background-color: darken($background-color, 15%);
   top: 0;
   bottom: 0;
   #{$position}: -14rem;
-  color: $background-color;
+  color: $text-color;
   opacity: 0.95;
   -webkit-transition: all 0.3s ease-in;
      -moz-transition: all 0.3s ease-in;
