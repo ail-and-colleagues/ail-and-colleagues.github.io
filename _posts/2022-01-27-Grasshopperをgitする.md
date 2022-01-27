@@ -1,8 +1,7 @@
 ---
 title: Grasshopperをgitしたい
 thumb: /img/2021/ghx-diff.png
-outline1: this is outline1. 日本語
-outline2: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
+outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
 ---
 
 
