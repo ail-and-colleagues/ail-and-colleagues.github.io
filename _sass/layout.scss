@@ -255,12 +255,13 @@ code {
 
 footer {
   background-color: $main-color;
-  color: darken($background-color, 15%);
+  /* color: darken($background-color, 15%); */
+  color: $background-color;
   text-align: center;
   padding: 0.6667em 0;
   background-color: $main-color;
   background-image: $background-grad;
-  a {
+  /*a {
   	text-decoration: none;
   	color: darken($background-color, 15%);
   	display: inline-block;
@@ -268,5 +269,5 @@ footer {
     &:focus {
       color: $background-color;
     }
-  }
+  }*/
 }
