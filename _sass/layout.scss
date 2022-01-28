@@ -263,7 +263,7 @@ footer {
   background-image: $background-grad;
   a {
   	text-decoration: none;
-  	color: darken($background-color, 15%);
+  	color: $background-color;
   	display: inline-block;
     /*&:hover,
     &:focus {
