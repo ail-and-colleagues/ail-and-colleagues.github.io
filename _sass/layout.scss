@@ -261,13 +261,13 @@ footer {
   padding: 0.6667em 0;
   background-color: $main-color;
   background-image: $background-grad;
-  /*a {
+  a {
   	text-decoration: none;
   	color: darken($background-color, 15%);
   	display: inline-block;
-    &:hover,
+    /*&:hover,
     &:focus {
       color: $background-color;
-    }
-  }*/
+    }*/
+  }
 }
