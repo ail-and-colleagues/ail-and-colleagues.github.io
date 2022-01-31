@@ -1,6 +1,7 @@
 # Site settings
 title: ail
-description: "Architectual Information Laboratory, Chiba University"
+description: "Architectual Information Laboratory (kado-lab.), Chiba University"
+description_jp: 千葉大学 建築情報研究室（加戸研究室）
 url: "https://ail-and-colleagues.github.io"
 author:
   name: "keita KADO"
