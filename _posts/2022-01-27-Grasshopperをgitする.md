@@ -1,13 +1,13 @@
 ---
 title: GrasshopperをGitする
 thumb: /img/2021/ghx-diff.png
-outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理ができないか試みています。
+outline: git_rhino_ghxは研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めた「grasshopperをGit/ Githubで管理しよう」というプロジェクトです。grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理ができないか試みています。
 ---
 
 
 
 Repository: [git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)は
-研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めたgrasshopperをGit/ Githubで管理しようというプロジェクトです。
+研究室内でgrasshopperのスパゲッティが量産されるのを解決したく始めた「grasshopperをGit/ Githubで管理しよう」というプロジェクトです。
 grasshopperはsave asからxml形式の.ghxでも保存できるのですが、それをパースして、どうにかGitな管理ができないか試みています。
 
 ざっくりと言えば、Grasshopperにて、外部のgrasshopper(.gh/ .ghx)を関数のように呼び出すことのできる[hops](https://developer.rhino3d.com/guides/compute/hops-component/)をgitで管理しつつ、そのサポートを[git_rhino_ghx](https://github.com/ail-and-colleagues/git_rhino_ghx)に含まれるghx_diff.pyとghx_to_dot.pyで行うことを試行しています。hopsのみで良いのでは、と思うかもしれませんが：
