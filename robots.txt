@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap : https://ail-and-colleagues.github.io/sitemap.xml
