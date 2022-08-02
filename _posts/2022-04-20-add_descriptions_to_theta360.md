@@ -15,12 +15,12 @@ py360convert](https://github.com/sunset1995/py360convert)をお借りしてい�
 
 [^1]球な画像が正距円筒図法（equirectangular）で表されたもの
 
-## convert_e2c.py
+### convert_e2c.py
 **E**quirectangular image **to** **C**ubed imageを行います。ほとんど[
 py360convert](https://github.com/sunset1995/py360convert)の処理の呼び出し部分です。キューブ画像を編集しようとすると気づくのですが、説明を加えたい対象がキューブの一つの面に含まれていたほうが便利ですね。このスクリプトではこのような調整は作っていないのでそのうち改良するかもしれません。
 ![e2c](/img/2022/theta-e2c.png "e2c")
 
-## convert_c2e.py
+### convert_c2e.py
 **C**ubed image **to** **E**quirectangular imageを行います。変換そのものは上と同じくpy360convert](https://github.com/sunset1995/py360convert)を使っています。
 
 それ以外のスクリプトは、Google Photoなどのビューワに「全天球画像です」と認識させるために情報を埋め込む処理になります。[全天球イラストを“360度画像”と識別させるJPEGセグメント(APP1-XMP)の埋め込み方](https://qiita.com/mana_544/items/3245ce87f0a0fca80c2a)に整理されているのですが、Photo Sphere XMPというセグメント（スクリプト内ではphoto_sphere_app_segとしています）をExifと同じようなイメージで埋め込む必要があるようです。このセグメントは画像処理ソフトウェアで編集すると失われるようですので、このスクリプトでは元の全天球画像からこのセグメントを複製し、出力ファイルに埋め込んでいます（ついでにExifも同様に複製・埋込を行っています）。なお、[全天球イラストを～](https://qiita.com/mana_544/items/3245ce87f0a0fca80c2a)では、このセグメントに含まれる設定を調整などもう少し凝った埋め込み方が紹介されています。
@@ -31,7 +31,7 @@ py360convert](https://github.com/sunset1995/py360convert)の処理の呼び出�
 
 ![c2e](/img/2022/theta-sample.png "sample")
 
-## 関連
+### 関連
 - （正距円筒図法の）全天球画像とキューブ画像の行き来を含む諸々の変換 [https://github.com/sunset1995/py360convert](https://github.com/sunset1995/py360convert)
 
 - 下記のサイトですともう少し凝った全天球のセグメントを埋め込む方法が紹介されています。 [https://qiita.com/mana_544/items/3245ce87f0a0fca80c2a](https://qiita.com/mana_544/items/3245ce87f0a0fca80c2a)

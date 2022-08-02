@@ -18,7 +18,7 @@ grasshopperはsave asからxml形式の.ghxでも保存できるのですが、�
 
 なお、[hops](https://developer.rhino3d.com/guides/compute/hops-component/)を用いるとコンポーネントの集まり（モジュール）に対する入出力を整理するマインドが芽生えるように思います。スパゲッティに対してはそれだけで一定の効果がありそうです。
 
-## ghx_diff.py
+### ghx_diff.py
 ghx_diff.pyは、.ghxのdiffをとる目的で作られています。ファイル名(.ghx)と前(left)・後(right)のブランチ名を指定すると次図のような差分:diffの表現された.ghxを
 *{target\_file\_name}*(*{left\_branch\_name}*\_to\_*{right\_branch\_name}*)\_diff.ghx
 として出力します。例えば、conflictした際に、これを使って採用版を作ったのち、
@@ -33,7 +33,7 @@ ghx_diff.pyは、.ghxのdiffをとる目的で作られています。ファイ�
 
 ![Test](/img/2021/ghx-diff.png "Test")
 
-## ghx_to_dot.py
+#### ghx_to_dot.py
 ghx_to_dot.pyはちょこっとした比較用に使うイメージで作られています。次図のようにコンポーネントの関係性をグラフとして表し、.pngで保存します。大凡どのような処理であったか、あるいは、add/stagingするべき変更なのか、など判断に使えると思っています。コンポーネントにはhashを付記できる（次図でいうpanelなどのコンポーネント名の左の「58b80...」など）ので、grasshopperでありがちな：
 - 同じ見た目のGH_pythionが複数存在してわからなくなる
 - internalizeやset valueした値が気づかないうちに更新されていた
@@ -48,7 +48,7 @@ ghx_to_dot.pyはちょこっとした比較用に使うイメージで作られ�
 ### ...
 加戸はgrasshopper、Git/Githubともにnewbieなのでもう少し使いながらバージョンアップをしていくことを予定しています。
 
-## 関連
+### 関連
 - Version control (grasshopper forum)
 [https://www.grasshopper3d.com/forum/topics/version-control](https://www.grasshopper3d.com/forum/topics/version-control)
 - Grasshopperの可読性を高めるには
