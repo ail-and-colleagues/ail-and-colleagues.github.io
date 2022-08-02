@@ -1,6 +1,6 @@
 ---
 title: 建築学生向けのpointnet
-thumb: /img/2022/theta-sample.png
+thumb: /img/2022/pointnet_thumb.png
 outline: ゼミのネタとして作成した点群処理のネットワークpointnetで分類を行うサンプルです。pointnetのサンプルはkerasのチュートリアルをはじめ数多く公開されているのですが、python初心者語で書く・とりあえず動かすところまでで躓かないをモットーに改めて作成してみたものをせっかくなので建築学生向け（？）として公開してみます。
 ---
 
