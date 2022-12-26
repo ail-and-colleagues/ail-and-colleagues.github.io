@@ -4,8 +4,32 @@ title: About ail
 ---
 
 ## About
-ail: Architectural Information Laboratory (kado-lab.), Chiba University | 千葉大学 建築情報研究室（加戸研究室)は、建築の分野において情報処理を活用してなにか新しいことをしようという研究室です。
+ail: Architectural Information Laboratory (kado-lab.), Chiba University | 千葉大学 建築情報研究室（加戸研究室)は、建築の分野において建築情報な技術を活用してなにか新しいことをしようという研究室です。
+加戸の専門分野としては**建築構法**と**建築情報**、最近の活動におけるキーワードは**Rhinoceros・Grasshopper**、**人工知能・深層学習**、**建築情報教育**です。
 
+学生の研究ツールとしては下記が挙げられます。
+研究室的な目標は、この辺りのツールを学びながら**情報技術を活かした建築分野における新しい何か**を提案することです。
+加えて、**建築情報的に新しいことにチャレンジするマインドセット**を身につけてほしいとも思っています。
+- 三次元CAD：ArchiCAD・Rhinoceros＋Grasshopper
+- プログラミング言語：Python
+- 人工知能：TensorFlow・Pytorch
+- ゲームエンジン：Unity
+
+### 連絡先
 e-mail: kado[at]chiba-u.jp
 
-...under construction.
+## Members 2022-2023
+M2: 鳥羽潤・堀江周平
+
+M1: 金澤光・前田雄飛
+
+UG4: 磯江啓吾・橋爪雄輔
+
+## OB
+### -2022
+#### M2
+福本健人「深層学習を用いた3D isovistの分析による建築空間の視界の定量的評価手法」
+
+本田悠樹「建築分野でのAI活用に向けた三次元モデルを用いた事前学習手法に関する研究」
+#### UG4
+大澤佳希「コンピュテーショナルデザイン手法の建築教材への適用に関する研究」
