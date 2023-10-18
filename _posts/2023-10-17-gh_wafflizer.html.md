@@ -17,7 +17,7 @@ outline: すこし前のことになるのですが、レーザーカッター�
 
 ![学生によるペン立て](../img/2023/2023-10-18-lasercut01.png)
 
-加戸はというと、Grasshopperの練習を兼ねて、レーザーカッターでの家具やオブジェクト作成でよく見られるワッフル化を行うスクリプトを実装し、Stanford Bunny（https://ja.wikipedia.org/wiki/スタンフォードバニー ）なペン立てを作成してみました。
+加戸はというと、Grasshopperの練習を兼ねて、レーザーカッターでの家具やオブジェクト作成でよく見られるワッフル化を行うスクリプトを実装し、[Stanford Bunny](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%83%90%E3%83%8B%E3%83%BC)なペン立てを作成してみました。
 ![gh_wafflizer](../img/2023/2023-10-18-lasercut02.png)
 
 三次元モデルを**Set one Mesh**すると自動的に：
