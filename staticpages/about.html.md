@@ -18,14 +18,23 @@ ail: Architectural Information Laboratory (kado-lab.), Chiba University | 千葉
 ### 連絡先
 e-mail: kado[at]faculty.gs.chiba-u.jp
 
-## Members 2022-2023
+## Members 2024-2025
 
 #### M2
-金澤光・前田雄飛
+金澤光
 #### UG4
-中田千香・野嶋春樹
+野嶋春樹・来栖裕也・高木良樹・蒔田優樹
+#### Research Student
+木ノ下翔太
 
 ## OB
+### -2024.3
+#### Master
+前田雄飛「コンテンツ生成AIと発想法を組み合わせた設計プロセスの検討 フィッシュボーン・ダイアグラムを用いたグループワーク」							
+
+#### Bachelor
+中田千香「Visibility GraphとGNNを用いた間取りのクラスタリングに関する研究」
+
 ### -2023.3
 #### Master
 鳥羽潤「深層学習と進化的アルゴリズムを用いた木漏れ日を感じるデザインの生成」
