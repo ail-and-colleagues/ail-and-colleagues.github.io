@@ -15,6 +15,9 @@ ail: Architectural Information Laboratory (kado-lab.), Chiba University | 千葉
 - 人工知能：TensorFlow・Pytorch
 - ゲームエンジン：Unity
 
+最近の研究発表などについては[researchmap](https://researchmap.jp/keita-kado)を参照ください。
+
+
 ### 連絡先
 e-mail: kado[at]faculty.gs.chiba-u.jp
 
