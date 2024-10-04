@@ -4,6 +4,7 @@
 //
 
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 body {
 	font-family: 'source han sans jp', 'Noto Sans JP', sans-serif;
@@ -30,6 +31,8 @@ h1 {
 	font-size: 3.5em; /*2.25em;*/ /* 36px/16px */
 	line-height: 1.3333em; /* 48px/36px */
 	padding: 0.33335em 0; /* 12px/36px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
+	font-family: 'source han sans jp';
+	font-weight: 400;
 }
 
 h2 {
