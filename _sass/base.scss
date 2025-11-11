@@ -46,3 +46,16 @@ a {
 		color: darken($main-color, 5%);
 	}
 }
+
+.video-container {
+  position: relative;
+  width: 60%;
+  padding-top: 40%;
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
